@@ -1,0 +1,99 @@
+/*--------------------------------------
+  カード型
+--------------------------------------*/
+.wrapper {
+  margin: 1rem auto;
+  width: 95%;
+}
+
+.wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  transition: all .5s;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+  color: #212121;
+  text-decoration: none;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card__header {
+
+}
+
+.card__title {
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  order: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-decoration: none;
+  word-wrap: break-all;
+  overflow-wrap: break-all;
+}
+
+.card__thumbnail {
+  margin: 0;
+  order: 0;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__body {
+  padding: 0 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__text {
+  font-size: 0.8rem;
+  text-align:center;
+  text-decoration: none;
+	padding-bottom: 0;
+}
+
+.card__text2 {
+  font-size: .8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card__text + .card__text {
+  margin-top: .5rem;
+}
+
+.card__footer {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color .3s ease-in-out;
+  text-align: center;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button.compact {
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  background-color: #4f96f6;
+  color: #fff;
+  font-weight: bold;
+	text-decoration: none;
+}
+
+.button.compact:hover,
+.button.compact:focus {
+  background-color: #6bb6ff;
+}

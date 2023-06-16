@@ -1,0 +1,32 @@
+.footer {
+  color: #333;
+  background: #fdfd7d;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+ }
+ .footer span {
+  color: #333;
+  text-decoration: none;
+ }
+ .footer span:hover {
+  text-decoration: underline;
+ }
+ .footer .menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ .footer .menu li {
+  margin: 0;
+  padding: 0 20px;
+ }
+ .footer .copyright {
+  margin: 0;
+  padding: 20px 0 0 0;
+ }

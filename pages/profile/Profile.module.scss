@@ -1,0 +1,52 @@
+.hero {
+  background-image: url("/images/profile1-min.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+    padding: 0;
+    margin: 2rem 2rem 0 2rem;
+  }
+
+  p {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0;
+    margin: 1rem 2rem 2rem 2rem;
+  }
+
+  .bg {
+    background-color: rgba(133, 1, 1, 0.5);
+  }
+}
+
+.profile {
+  .me {
+    width: 80%;
+    margin: 0 auto;
+    background-color: honeydew;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 30vh;
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}

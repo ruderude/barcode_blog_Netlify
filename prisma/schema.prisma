@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  // previewFeatures = ["referentialIntegrity"]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+  // referentialIntegrity = "prisma"
+}
+
+model Comment {
+  id Int @default(autoincrement()) @id
+  blogId String
+  name String
+  comment String @db.Text
+  createdAt DateTime @db.DateTime
+}
+
+// model User {
+//   id Int @default(autoincrement()) @id
+//   name String
+//   age Int
+//   createdAt DateTime @db.DateTime
+// }
