@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import type { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import { client } from "../../libs/client"
 import { format } from 'date-fns'
 import SideBar from '../../components/layout/SideBar'
@@ -41,6 +42,20 @@ const BlogId: NextPage<any> = ({ blog, categories, tags }) => {
                   <div className={styles.tags_children} key={tag.id}>
                     <FaTags color={'red'} />&nbsp;{tag.name}</div>
               ))}
+            </div>
+            <br />
+            <div className={styles.image_container}>
+              <Image
+                src={blog.image.url}
+                alt={blog.title}
+                fill
+                style={{
+                  objectFit: 'cover',
+                }}
+              />
+            </div>
+            <div>
+              <h1 className={styles.title}>{blog.title}</h1>
             </div>
             <div
               dangerouslySetInnerHTML={{
