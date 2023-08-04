@@ -19,6 +19,7 @@ interface Inputs {
 const Contact: NextPage<any> = ({ categories, tags, publicKey, serviceId, templateId }) => {
   const title = `バーコード・ブログ: お問い合わせ`
   const description = `バーコード・ブログ: お問い合わせ`
+  const [canSend, setCanSend] = useState(true)
 
   const {
     register,
@@ -39,6 +40,8 @@ const Contact: NextPage<any> = ({ categories, tags, publicKey, serviceId, templa
   }
 
   const sendForm: SubmitHandler<Inputs> = (data) => {
+    if (!canSend) return
+    setCanSend(false)
     const check = data.check
     if (check) {
       toast.error('メール送信に失敗しました！')
@@ -60,9 +63,11 @@ const Contact: NextPage<any> = ({ categories, tags, publicKey, serviceId, templa
       .then((result) => {
         toast('お問い合わせメールを送信しました！')
         clearForm()
+        setCanSend(true)
       }, (error) => {
         console.log(error.text)
         toast.error('メール送信に失敗しました！')
+        setCanSend(true)
       })
   }
   
