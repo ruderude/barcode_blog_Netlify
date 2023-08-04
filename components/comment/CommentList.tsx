@@ -25,6 +25,7 @@ const CommentList: React.FC<BlogIdRapper> = ({ blogId }) => {
 
   const RequestUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/api/comment`
   const [comments, setComments] = useState<CommentData[]>([])
+  const [canCommentSubmit, setCanCommentSubmit] = useState<boolean>(true)
 
   const {
     register,
@@ -42,9 +43,12 @@ const CommentList: React.FC<BlogIdRapper> = ({ blogId }) => {
   }
 
   const sendForm: SubmitHandler<Inputs> = (data) => {
+    if (!canCommentSubmit) return
+    setCanCommentSubmit(false)
     const check = data.check
     if (check) {
       toast.error('コメントの投稿に失敗しました！')
+      setCanCommentSubmit(true)
       return
     }
 
@@ -59,12 +63,14 @@ const CommentList: React.FC<BlogIdRapper> = ({ blogId }) => {
       .post(RequestUrl, params)
       .then((response) => {
         toast('コメントを投稿しました！')
+        setCanCommentSubmit(true)
         clearForm()
         getComments()
       })
       .catch((error) => {
         console.log('error', error)
         toast.error('コメントの投稿に失敗しました！')
+        setCanCommentSubmit(true)
       })
   }
 
