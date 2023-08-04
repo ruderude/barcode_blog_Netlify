@@ -5,6 +5,7 @@ import { client } from "../../libs/client"
 import SideBar from '../../components/layout/SideBar'
 import styles from './Profile.module.scss'
 import { ImPacman } from 'react-icons/im'
+import Link from 'next/link'
 
 const Profile: NextPage<any> = ({ categories, tags }) => {
   const title = `バーコード・ブログ: プロフィール`
@@ -35,7 +36,17 @@ const Profile: NextPage<any> = ({ categories, tags }) => {
             <div className={styles.me}>
               <ImPacman />&nbsp;
               39歳からプログラミング学習を開始して40歳からプログラマになりました。
-              1979年生まれの訓志といいます。
+              1979年生まれの訓志といいます。<br />
+              <div>
+                <Link href="/blog/9yperwtv1yo">
+                  <span>自己紹介記事←</span>
+                </Link>
+              </div>
+              <div>
+                <Link href="/blog/jujh96jb4">
+                  <span>IT業界経歴←</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
