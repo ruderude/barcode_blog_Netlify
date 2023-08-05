@@ -10,6 +10,8 @@ const Card = ({ blog }: { blog: any }) => {
   const [createdAt, setCreatedAt] = useState<string>()
   const [updatedAt, setUpdatedAt] = useState<string>()
 
+  console.log('blog', blog)
+
   useEffect(() => {
     setCreatedAt(format(new Date(blog.createdAt), 'yyyy年MM月dd日'))
     setUpdatedAt(format(new Date(blog.updatedAt), 'yyyy年MM月dd日'))
@@ -43,11 +45,11 @@ const Card = ({ blog }: { blog: any }) => {
               <div>
                <BsFillBookmarkHeartFill color={'red'} />&nbsp;{blog.category.name}
               </div>
-              <div>
+              {/* <div>
                 {blog.tags.map((tag: any) => (
                   <span style={{marginLeft: '2px'}} key={tag.id}><FaTags color={'red'} />{tag.name}</span>
                 ))}
-              </div>
+              </div> */}
             </div>
           </article>
         </div>
