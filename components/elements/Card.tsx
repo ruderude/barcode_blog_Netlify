@@ -45,11 +45,11 @@ const Card = ({ blog }: { blog: any }) => {
               <div>
                <BsFillBookmarkHeartFill color={'red'} />&nbsp;{blog.category.name}
               </div>
-              {/* <div>
+              <div>
                 {blog.tags.map((tag: any) => (
                   <span style={{marginLeft: '2px'}} key={tag.id}><FaTags color={'red'} />{tag.name}</span>
                 ))}
-              </div> */}
+              </div>
             </div>
           </article>
         </div>
