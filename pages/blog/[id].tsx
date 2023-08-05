@@ -9,6 +9,7 @@ import CommentList from '../../components/comment/CommentList'
 import styles from './Blog.module.scss'
 import { BsFillBookmarkHeartFill } from 'react-icons/bs'
 import { FaTags } from 'react-icons/fa'
+import ReactMarkdown from 'react-markdown'
 
 const BlogId: NextPage<any> = ({ blog, categories, tags }) => {
 
@@ -22,6 +23,8 @@ const BlogId: NextPage<any> = ({ blog, categories, tags }) => {
     setCreatedAt(format(new Date(blog.createdAt), 'yyyy年MM月dd日'))
     setUpdatedAt(format(new Date(blog.updatedAt), 'yyyy年MM月dd日'))
   }, [blog.createdAt, blog.updatedAt])
+
+  console.log(blog)
 
   return (
     <>
@@ -57,11 +60,12 @@ const BlogId: NextPage<any> = ({ blog, categories, tags }) => {
             <div>
               <h1 className={styles.title}>{blog.title}</h1>
             </div>
-            <div
+            {/* <div
               dangerouslySetInnerHTML={{
                 __html: `${blog.body}`,
               }}
-            />
+            /> */}
+            <ReactMarkdown>{blog.body}</ReactMarkdown>
           </div>
 
           <hr />
