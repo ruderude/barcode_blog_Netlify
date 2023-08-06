@@ -89,6 +89,23 @@
     content: '';
   }
 
+  a:link {
+    color: #0000EE;
+    text-decoration: underline;
+  }
+   
+  a:visited {
+    color: #551A8B;
+    text-decoration: underline;
+  }
+   
+  a:hover {}
+   
+  a:active {
+    color: #FF0000;
+    text-decoration: underline;
+  }
+
   pre {
     padding: 1rem;
     background-color: #000d5f;

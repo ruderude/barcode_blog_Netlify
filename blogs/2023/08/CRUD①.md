@@ -41,5 +41,5 @@ XAMPPのコンソールからデータバースをコマンドで操作してみ
 
 ***
 
-[前の記事]([URL](/blog/x-ljnyevk7p2))
-[次の記事]([URL](/blog/hmfdysskmc))
+[前の記事:デバッグについて【プログラミング最初の一歩】](https://barcode-blog.netlify.app/blog/x-ljnyevk7p2)
+[次の記事:CRUD②](https://barcode-blog.netlify.app/blog/hmfdysskmc)
