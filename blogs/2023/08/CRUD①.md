@@ -2,7 +2,7 @@
 
 ## CRUDとはなんですか？
 
-`解答：バックエンドの領域においてデータベースを操作する処理のことを指した言葉です。`
+ **解答：バックエンドの領域においてデータベースを操作する処理のことを指した言葉です。** 
 
 **C…クリエイト（Create）**  
 データ作成。
@@ -41,5 +41,5 @@ XAMPPのコンソールからデータバースをコマンドで操作してみ
 
 ***
 
-[前の記事:デバッグについて【プログラミング最初の一歩】](https://barcode-blog.netlify.app/blog/x-ljnyevk7p2)
+[前の記事:デバッグについて【プログラミング最初の一歩】](https://barcode-blog.netlify.app/blog/x-ljnyevk7p2)  
 [次の記事:CRUD②](https://barcode-blog.netlify.app/blog/hmfdysskmc)
