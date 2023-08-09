@@ -1,4 +1,4 @@
-# CRUD①
+# CRUD①【個人開発のすゝめ 4】
 
 ## CRUDとはなんですか？
 
@@ -41,5 +41,5 @@ XAMPPのコンソールからデータバースをコマンドで操作してみ
 
 ***
 
-[前の記事:デバッグについて【プログラミング最初の一歩】](https://barcode-blog.netlify.app/blog/x-ljnyevk7p2)  
-[次の記事:CRUD②](https://barcode-blog.netlify.app/blog/hmfdysskmc)
+[前の記事:デバッグについて【個人開発のすゝめ 3】](https://barcode-blog.netlify.app/blog/x-ljnyevk7p2)  
+[次の記事:CRUD②【個人開発のすゝめ 5】](https://barcode-blog.netlify.app/blog/hmfdysskmc)

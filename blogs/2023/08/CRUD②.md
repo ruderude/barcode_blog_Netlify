@@ -1,5 +1,5 @@
 
-# CRUD②
+# CRUD②【個人開発のすゝめ 5】
 
 ## CRUDとは？
 
@@ -79,5 +79,5 @@ htmlファイルかphpファイルにフォームを設置してみよう。
 
 ***
 
-[前の記事:CRUD①](https://barcode-blog.netlify.app/blog/z5coq5i7ji)
+[前の記事:CRUD①【個人開発のすゝめ 4】](https://barcode-blog.netlify.app/blog/z5coq5i7ji)  
 [次の記事:]()
