@@ -49,7 +49,8 @@ Webシステムへのアタックでは、
 エスケープなどして出力物をサニタイズ（無害化）する。
 
 ※参考資料
-https://www.shadan-kun.com/waf_websecurity/xss/
+[クロスサイトスクリプティング（XSS）とは？](https://www.shadan-kun.com/waf_websecurity/xss/)
+
 
 ### SQLインジェクション
 
@@ -61,8 +62,8 @@ SQLへの挿入部分に悪意のあるコードを入れ込み、Webシステ�
 PHPであれば、PDOクラスのプリペアドステートメントなどを使いサニタイズする。
 
 ※参考資料
+[SQLインジェクションの5つの対策と被害事例](https://www.nttpc.co.jp/column/security/sql_injection.html)
 
-https://www.nttpc.co.jp/column/security/sql_injection.html
 
 
 ### CSRF（クロスサイトリクエストフォージュリ）
@@ -76,8 +77,7 @@ https://www.nttpc.co.jp/column/security/sql_injection.html
 CSRFトークンをフォームに設置（その瞬間にしか知り得ない暗号）することにより、安全なパラメータとしてリクエストを処理するなどがある。
 
 ※参考資料
-https://medium-company.com/クロスサイトリクエストフォージェリ/
-
+[クロスサイトリクエストフォージェリ（CSRF）とは](https://medium-company.com/クロスサイトリクエストフォージェリ/)
 
 ### セッションハイジャック
 
@@ -91,8 +91,7 @@ Cookieの情報をJavaScriptで抜けないようにする。
 CSRF対策。
 
 ※参考資料
-https://cybersecurity-jp.com/security-measures/18583
-
+[セッションハイジャックとは？](https://cybersecurity-jp.com/security-measures/18583)
 
 ### クリックジャッキング
 
@@ -104,15 +103,11 @@ https://cybersecurity-jp.com/security-measures/18583
 - FlashやJavaScriptを無効にする
 - ブラウザやOSのアップデート
 
-
 ▼管理側
 - X-FRAME-OPTIONSを導入する
 
-
 ※参考資料
-https://it-trend.jp/cyber_attack/article/442-0026
-
-
+[クリックジャッキングとは？](https://it-trend.jp/cyber_attack/article/442-0026)
 
 ### ディレクトリトラバーサル
 
@@ -125,7 +120,7 @@ Webサイトからファイル名を直接指定するようなWebアプリケ�
 - ディレクトリやファイルには適切な権限をつける
 
 ※参考資料
-https://medium-company.com/ディレクトリトラバーサル/
+[ディレクトリトラバーサルとは](https://medium-company.com/ディレクトリトラバーサル/)
 
 ### OSコマンドインジェクション
 
@@ -139,7 +134,7 @@ https://medium-company.com/ディレクトリトラバーサル/
 そこに配慮したプログラミングを。
 
 ※参考資料
-https://www.shadan-kun.com/blog/measure/2873/
+[OSコマンドインジェクションの仕組みとその対策](https://www.shadan-kun.com/blog/measure/2873/)
 
 ### その他主要キーワード
 
@@ -167,3 +162,9 @@ https://www.shadan-kun.com/blog/measure/2873/
 一度に全部覚えるのは大変なので、頭の片隅においておきましょう。
 
 ※徳丸本は読もう！
+
+***
+
+[前の記事:ITエンジニアロードマップの目次【個人開発のすゝめ 1】](https://barcode-blog.netlify.app/blog/uokvvyjq2a)
+
+[次の記事:環境構築について【個人開発のすゝめ 2】](https://barcode-blog.netlify.app/blog/zjogf8j1y9)
