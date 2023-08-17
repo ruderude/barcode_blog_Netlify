@@ -1,4 +1,4 @@
-# Webシステム構築におけるセキュリティについて【】
+# Webシステム構築におけるセキュリティについて【個人開発のすゝめ】
 
 
 ## セキュリティとは
@@ -60,6 +60,7 @@ SQLへの挿入部分に悪意のあるコードを入れ込み、Webシステ�
 
 バリデーションで入力値を制限する。（長いSQLを許すほどできることが多くなる）
 PHPであれば、PDOクラスのプリペアドステートメントなどを使いサニタイズする。
+フレームワークのLaravelのデフォルトでは、DBが複文禁止設定になっている。
 
 ※参考資料
 [SQLインジェクションの5つの対策と被害事例](https://www.nttpc.co.jp/column/security/sql_injection.html)
@@ -167,3 +168,5 @@ Webサイトからファイル名を直接指定するようなWebアプリケ�
 [前の記事:ITエンジニアロードマップの目次【個人開発のすゝめ 1】](https://barcode-blog.netlify.app/blog/uokvvyjq2a)
 
 [次の記事:環境構築について【個人開発のすゝめ 2】](https://barcode-blog.netlify.app/blog/zjogf8j1y9)
+
+
